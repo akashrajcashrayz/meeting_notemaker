@@ -134,6 +134,6 @@ curl -X POST http://127.0.0.1:5000/api/meetings/1/chat \
 ## Troubleshooting
 
 - **"GROQ_API_KEY is not set"** — make sure the file is named exactly `.env` (not `.env.txt`) and sits next to `app.py`; restart the server.
-- **"rate limit was hit"** — the free tier limits tokens per minute. Wait a minute, or switch `GROQ_MODEL` to `llama-3.1-8b-instant`.
+- **"rate limit was hit"** — the free tier limits tokens per minute. Wait a minute, or switch `GROQ_MODEL` to `openai/gpt-oss-120b `.
 - **Audio over 25 MB** — compress it first, e.g. `ffmpeg -i meeting.wav -ac 1 -b:a 32k meeting.mp3`.
 - **Want to start fresh?** Stop the server and delete `data/meetings.db`.
