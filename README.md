@@ -13,7 +13,7 @@ It runs entirely on **Groq's free tier** with open-source models — no paid API
 
 | Job | Model |
 | --- | --- |
-| Analysis + chat | `llama-3.3-70b-versatile` (Meta Llama 3.3) |
+| Analysis + chat | `openai/gpt-oss-120b`  |
 | Audio → text | `whisper-large-v3-turbo` (OpenAI Whisper, open weights) |
 
 ---
@@ -125,7 +125,7 @@ curl -X POST http://127.0.0.1:5000/api/meetings/1/chat \
 | Variable | Default | Notes |
 | --- | --- | --- |
 | `GROQ_API_KEY` | — | Required |
-| `GROQ_MODEL` | `llama-3.3-70b-versatile` | `llama-3.1-8b-instant` is faster with higher free limits |
+| `GROQ_MODEL` | `openai/gpt-oss-120b `| is faster with higher free limits |
 | `GROQ_WHISPER_MODEL` | `whisper-large-v3-turbo` | or `whisper-large-v3` (slower, slightly more accurate) |
 | `DATABASE_PATH` | `data/meetings.db` | |
 | `PORT` | `5000` | |
